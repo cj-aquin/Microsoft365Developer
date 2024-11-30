@@ -1,0 +1,105 @@
+/* Global Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px for easier calculations */
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Soft background for better contrast */
+    color: #333; /* Softer black for readability */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Standard height for header */
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #ffffff; /* Explicit background for clarity */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Styles */
+#main_tabs {
+    display: flex;
+    flex-direction: column; /* Vertical stacking */
+    align-items: center;
+    gap: 15px; /* Even spacing between items */
+    padding: 10px 0;
+    background-color: #ffffff; /* Matches the header background */
+    border-right: 1px solid #e0e0e0; /* Subtle divider */
+    height: 100%; /* Full viewport height */
+    position: fixed;
+    left: 0;
+    top: 60px; /* Below the header */
+    width: 80px; /* Fixed width for navigation */
+}
+
+/* Navigation Links */
+#main_tabs a {
+    display: flex;
+    flex-direction: column; /* Icon above text */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* No underline */
+    color: #333; /* Standard color for text */
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    border-radius: 5px; /* Rounded hover effect */
+}
+
+#main_tabs a:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+    transform: translateY(-3px); /* Slight upward lift */
+}
+
+#main_tabs a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease; /* Smooth scaling animation */
+}
+
+#main_tabs a:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#main_tabs a span {
+    font-size: 1.4rem;
+    margin-top: 5px; /* Space between icon and text */
+    text-align: center;
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #main_tabs {
+        flex-direction: row; /* Change to horizontal layout on smaller screens */
+        justify-content: center;
+        position: static;
+        width: 100%; /* Full width */
+        height: auto;
+        border-right: none; /* Remove side border */
+        border-top: 1px solid #e0e0e0; /* Add top border */
+    }
+
+    #main_tabs a {
+        flex-direction: row; /* Icon next to text */
+        gap: 10px; /* Space between icon and text */
+    }
+
+    #main_tabs a span {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+}

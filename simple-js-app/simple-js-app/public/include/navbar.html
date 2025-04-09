@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic-Booking App</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="">
+              <img src="images/logo.png" alt="BUPC Clinic Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.php">About Us</a>
+                  </li>
+
+                  <!-- Assuming isLoggedIn() and similar logic is handled in JavaScript instead 
+                  <li class="nav-item">
+                      <a class="nav-link" href="admin_panel.php">Admin Panel</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="staff/staff_dashboard.php">Staff Dashboard</a>
+                  </li>
+                  -->
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="book_appointment.php">Book Appointment</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="client/my_appointments.php">My Appointments</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-user-circle"></i> Username
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="client/profile.php">Profile</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                      </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="login.php">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="btn btn-warning" href="register.php">Register</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</body>
+</html>
